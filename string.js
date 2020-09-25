@@ -45,7 +45,8 @@
 // var sent = "I've always wanted \n \t to be a \"developer\"."
 // console.log(sent)
 
-// // String Concatination  (+)
+
+// // String Concatination  (+):
 
 // var firstName = "Abhishek";
 // var lastName ="Mishra";
@@ -61,14 +62,14 @@
 // console.log(value)
 
 // var name = "Abhishek";
-
 // var emailId = "abcd@efgh.com"
 // var password = 1234
 
 // var value = "Dear" + " " + "'" + name + "'" +  " " +  "\n Thankyou for signup" + "." + "Your account is succesfully created" + "." + "Please Login with your" + " " + emailId + " " + "and" + " " + password+" \n Thankyou." 
 // console.log(value)
 
-// String Literal 
+
+// String Literal:
 
 // var sentence = `I've always wanted to be a "developer."`
 // console.log(sentence)
