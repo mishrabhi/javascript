@@ -150,3 +150,35 @@
 //     break;
 // }
 
+//Functions=>
+// var a = 10;
+// var b = 15;
+// function add(a , b ){
+//     c = a + b
+//     console.log(c)
+// }
+// add(10,15)   
+
+// function mul(a,b){
+//     c = a*b
+//     console.log(c)
+// }
+// mul(10,15)
+
+function add(){
+    var a = 10;
+    var b= 20;
+    var addition = a + b;
+    console.log(addition)
+}
+add()
+
+function fullName(){
+    var firstName = "Abshk"
+    var lastName = "Mishra"
+    var fullN = firstName + lastName
+    console.log(fullN)
+}
+ var value = fullName()
+
+console.log("Hii my name is", fullName())
