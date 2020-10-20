@@ -165,20 +165,213 @@
 // }
 // mul(10,15)
 
-function add(){
-    var a = 10;
-    var b= 20;
-    var addition = a + b;
-    console.log(addition)
-}
-add()
+// function add(){
+//     var a = 10;
+//     var b= 20;
+//     var addition = a + b;
+//     console.log(addition)
+// }
+// add()
 
-function fullName(){
-    var firstName = "Abshk"
-    var lastName = "Mishra"
-    var fullN = firstName + lastName
-    console.log(fullN)
-}
- var value = fullName()
+// function fullName(){
+//     var firstName = "Abshk"
+//     var lastName = "Mishra"
+//     var fullN = firstName + lastName
+//     console.log(fullN)
+// }
 
-console.log("Hii my name is", fullName())
+// =>Scoping=>
+
+// // var a = 28;
+// // var b = 24;
+// function got(){
+//     var a = 28;
+//     var b = 24;
+//     var c = 'Abhishek'
+//     d = a+b+c
+// }
+// got()
+// console.log(d)
+
+
+// var a = 18;
+// var b = 22;
+// function kkk(){
+//     c = a + b
+//     console.log(c)
+// }
+// kkk()
+// console.log(c)
+
+
+
+// var name = 'Abhsk';
+// function ppp(){
+//     firstname = 'mishra'
+// }
+// ppp()
+// console.log(firstname)
+
+
+
+// function lll(){
+//     var a = 12;
+//     var b = 13;
+//     var c = 11;
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+// }
+// lll()
+  
+
+// =>Arguments=>
+
+// function raja(){
+//     var obj = {
+//         name: 'Abhishek',
+//         age: 23,
+//         lastname: 'Mishra'
+//     }
+//     return obj
+// }
+// var value = raja()
+// console.log(value.lastname)
+
+// value.arr = [1,2,3]
+// console.log(value)
+// console.log(raja())
+
+
+
+// function satyam(){
+//     var arr = [1,5,'raja', true]
+//     var obj = {
+//         name: 'Abhishek',
+//         age: 23,
+//         FriendName: 'Ajeet'
+//     }
+//     return arr
+// }
+// var value = satyam()
+// console.log(value.arr)
+
+// value.obj = {
+//     location: 'Allahabad',
+//     Education: 'bSC'
+// }
+// console.log(value)
+// console.log(satyam()) 
+
+
+
+// =>Some Problems =>
+
+
+//1.Write a programme to count the no. of odd elements in an array.
+// var arr = [2,4,5,13,9,7];
+// var odd =[];
+// for(var i = 0; i<arr.length; i++){
+//     if(arr[i] % 2 !=0){
+//         odd.push(arr[i])
+//     }
+// }
+// console.log(odd.length)  //4
+
+//2.WAP to give array of indexes of odd elements in an array.
+// var array = [2,4,5,13,8,9,7];
+// var odd = [];
+// for (var i = 0; i<array.length; i++){
+//     if(array[i] % 2 !=0){
+//         odd.push(i)
+//     }
+// }
+// console.log(odd)     
+
+
+//3.WAP to reverse the elements of an array.
+//  var array = [1,2,3,4,5];
+//  var rev = [];
+//  for(i=array.length-1; i>=0; i--){
+//      rev.push(array[i])
+//  }
+//  console.log(rev)   //[5,4,3,2,1]
+
+//4.WAP to find the largest no. in an array.
+//   var array = [5,9,3,11,4];
+//   var largest = 0;
+//   for(i=0; i<array.length; i++){
+//       if(array[i] > largest){
+//           largest = array[i]
+//       }
+//   }
+//   console.log(largest)  //11
+
+//5.WAP to add the array elements.
+// var array = [1,2,3,4,5];
+// var sum = 0;
+// for(i=0; i<array.length-1; i++){
+//     sum = sum + array[i]
+// }
+// console.log(sum)   //10
+
+//6.WAP to add even and odd nos. of an array.
+//  var array =[1,3,4,6,5,9,8,12];
+//  var odd =0;
+//  var even =0;
+//  for(i=0; i<array.length; i++){
+//      if(array[i] % 2 !=0){
+//          odd+=array[i] // odd = odd+array[i]
+//      }
+//      else even+=array[i]  //even = even+array[i]
+//  }
+//  console.log(odd)  //18
+//  console.log(even)  //30
+
+
+//7.WAP to find first and second largest no. in an array.
+// var array = [5,7,11,8,17,9];
+// for(i=0; i<array.length; i++){
+    
+//     for(j=i+1; j<array.length; j++){
+//         if(array[i]>array[j]){
+//             var temp = array[i]
+//             array[i] = array[j]
+//             array[j] = temp
+//         }
+//     }
+// }
+// console.log('first greatest number',array[array.length-1])    //first greatest number 17
+// console.log('second largest number',array[array.length-2])    //second largest number 11
+
+
+//8.WAP to find first and second smallest number in an array.
+
+var array = [8,4,9,11,3,0];
+for(var i=0; i<array.length; i++){
+    for(var j=i+1; j<array.length; j++){
+        if(array[i]<array[j]){
+            var temp = array[i]
+            array[i]=array[j]
+            array[j]= temp
+        }
+    }
+}
+console.log('smallest number',array[array.length-1])
+console.log('second smallest number',array[array.length-2])
+
+//9.WAP to count no. of times each elements occuring in an array.
+
+
+//10.WAP to count how many digits in a number.
+
+
+//11.WAP to check a number is palendrome or not.
+
+
+//12.WAP to print all the prime nos. b/w 1 to 100.     
+
+
+
+var arr = [1,2,3,true,false]
+arr.reverse();

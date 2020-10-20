@@ -18,19 +18,36 @@
 //     }
 // }
 
-function info(){
+// function info(){
+//     var obj = {
+//         name: 'moihni',
+//         age :24
+//     }
+//     return obj
+// }
+
+// var value = info()
+
+// console.log(value.name) 
+
+// value.education = "Btech"
+// console.log(value)
+
+// console.log(info())
+
+function raja(){
     var obj = {
-        name: 'moihni',
-        age :24
+        name: 'Abhishek',
+        age: 23,
+        location: 'Allahabad',
     }
     return obj
 }
 
-var value = info()
+var value = raja()
 
-console.log(value.name) 
+console.log(value.name)
 
-value.education = "Btech"
+value.friendName ='Ajeet'
+console.log(raja())
 console.log(value)
-
-console.log(info())
