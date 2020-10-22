@@ -347,21 +347,31 @@
 
 //8.WAP to find first and second smallest number in an array.
 
-var array = [8,4,9,11,3,0];
-for(var i=0; i<array.length; i++){
-    for(var j=i+1; j<array.length; j++){
-        if(array[i]<array[j]){
-            var temp = array[i]
-            array[i]=array[j]
-            array[j]= temp
+// var array = [8,4,9,11,3,0];
+// for(var i=0; i<array.length; i++){
+//     for(var j=i+1; j<array.length; j++){
+//         if(array[i]<array[j]){
+//             var temp = array[i]
+//             array[i]=array[j]
+//             array[j]= temp
+//         }
+//     }
+// }
+// console.log('smallest number',array[array.length-1])
+// console.log('second smallest number',array[array.length-2]) 
+
+//9.WAP to count no. of times each elements occuring in an array.
+var array = [2,4,5,2,7,5];
+var obj = {};
+for(i=0; i<array.length; i++){
+    obj[array[i]] = 1
+    for(j=1; j<i; j++){
+        if(array[i] == array[j]){
+            obj[array[i]] = obj[array[j]] + 1
         }
     }
 }
-console.log('smallest number',array[array.length-1])
-console.log('second smallest number',array[array.length-2])
-
-//9.WAP to count no. of times each elements occuring in an array.
-
+console.log(obj)  
 
 //10.WAP to count how many digits in a number.
 
