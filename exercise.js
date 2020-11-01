@@ -360,18 +360,20 @@
 // console.log('smallest number',array[array.length-1])
 // console.log('second smallest number',array[array.length-2]) 
 
+
 //9.WAP to count no. of times each elements occuring in an array.
-var array = [2,4,5,2,7,5];
-var obj = {};
-for(i=0; i<array.length; i++){
-    obj[array[i]] = 1
-    for(j=1; j<i; j++){
-        if(array[i] == array[j]){
-            obj[array[i]] = obj[array[j]] + 1
-        }
-    }
-}
-console.log(obj)  
+// var array = [2,4,5,2,7,5];
+// var obj = {};
+// for(i=0; i<array.length; i++){
+//     obj[array[i]] = 1
+//     for(j=1; j<i; j++){
+//         if(array[i] == array[j]){
+//             obj[array[i]] = obj[array[j]] + 1
+//         }
+//     }
+// }
+// console.log(obj)  
+
 
 //10.WAP to count how many digits in a number.
 
@@ -380,8 +382,20 @@ console.log(obj)
 
 
 //12.WAP to print all the prime nos. b/w 1 to 100.     
+var num = [];
+var isPrime = true ;
+for(i=2; i<100; i++){
+     if(i%2 ==0){
+        isPrime = false;
+        break;
+     }else{
+         num.push(i)
+     }
+}
+console.log(num)
 
-
-
-var arr = [1,2,3,true,false]
-arr.reverse();
+// if(isPrime) {
+//     console.log("Number is prime", num)
+// }else {
+//     console.log("Bumber is not prime ", num);
+// }
