@@ -378,24 +378,40 @@
 //10.WAP to count how many digits in a number.
 
 
+
+
+
+
+
 //11.WAP to check a number is palendrome or not.
 
 
-//12.WAP to print all the prime nos. b/w 1 to 100.     
-var num = [];
-var isPrime = true ;
-for(i=2; i<100; i++){
-     if(i%2 ==0){
-        isPrime = false;
-        break;
-     }else{
-         num.push(i)
-     }
-}
-console.log(num)
+// //12.WAP to print all the prime nos. b/w 1 to 100.     
+// var num = [];
+// var isPrime = true ;
+// for(i=2; i<100; i++){
+//      if(i%2 ==0){
+//         isPrime = false;
+//         break;
+//      }  
+// }
 
 // if(isPrime) {
 //     console.log("Number is prime", num)
 // }else {
 //     console.log("Bumber is not prime ", num);
 // }
+
+
+//Functions Question =>WAP to programme to find the odd nos. in an array using function.
+// let arr = [2,4,5,6,7,8];
+// let odd =[];
+// function foo(){
+//     for(i=0; i<arr.length; i++){
+//         if(arr[i] % 2 !=0){
+//             odd.push(arr[i])
+//         }
+//     }
+//     console.log(odd.length)
+// }
+// foo()  //2
