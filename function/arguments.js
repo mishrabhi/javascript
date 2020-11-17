@@ -1,4 +1,4 @@
-// arguments passed when function cretaed.
+// arr passed when function cretaed.
 // parameter pass when we call function.
 // argument keyword is array like object.
 
@@ -115,15 +115,44 @@
 // console.log(foo(2,5,8,3,0,4))  //8
 
 //Ques:- WAP to add even and odd nos. of an array using function.
-function foo(){
-  let odd = 0
-  let even = 0
-  for(i=0; i<arguments.length; i++){
-    if(arguments[i] % 2 != 0){
-      odd +=arguments[i] 
+// function foo(){
+//   let odd = 0
+//   let even = 0
+//   for(i=0; i<arguments.length; i++){
+//     if(arguments[i] % 2 != 0){
+//       odd +=arguments[i] 
+//     }
+//     else even +=arguments[i]
+//   }
+//   return {odd, even}
+// }
+// console.log(foo(1,2,3,4,5,6,7,8)) // {odd:16, even:20}
+
+// Ques:- WAP to find first and second largest numbr in an array using function.
+function foo(arr){
+  let temp;
+  for(i=0; i<arr.length; i++){
+    for(j=i+1; j<arr.length; j++){
+      if(arr[i]<arr[j]){
+         temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+      }
     }
-    else even +=arguments[i]
-  }
-  return {odd, even}
+  }return [`Frst value ${arr[0]}`, `second num ${arr[1]}`]
 }
-console.log(foo(1,2,3,4,5,6,7,8))
+console.log(foo([2,8,6,5])) 
+
+// Ques:- WAP to count no. of times each elements occuring in an Array. 
+// function foo(n){
+//   let obj = {};
+//   for(i=0; i<n.length; i++){
+//    if(obj[n[i]]){
+//     obj[n[i]]++
+//    }else{
+//      obj[n[i]] = 1
+//    }
+//   }
+//   return obj
+// }
+// console.log(foo([2,4,5,2,7,5]))  
