@@ -139,9 +139,9 @@ function foo(arr){
         arr[j] = temp
       }
     }
-  }return [`Frst value ${arr[0]}`, `second num ${arr[1]}`]
+  }return [`Frst value ${arr[0]}`, `second value ${arr[1]}`]
 }
-console.log(foo([2,8,6,5])) 
+console.log(foo([2,8,6,5]))  // 'Frst value 8", "second value 6"
 
 // Ques:- WAP to count no. of times each elements occuring in an Array. 
 // function foo(n){
