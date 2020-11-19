@@ -33,9 +33,9 @@
 // console.log(temp)
 
 
-// while loop
+//=> while loop
 
-//=> var a= 10;
+// var a= 10;
 // var b = 3;
 // var temp =1; 
 // var i = 1;
@@ -52,7 +52,7 @@
 // }
 
 
-// do-while loop=>
+//=> do-while loop=>
 
 // var i = 1;
 // do{
@@ -62,7 +62,7 @@
 // while(i<0)
 
 
-// while-loop=>
+//=> while-loop=>
 
 // var i = 1;
 // while(i<=10){
@@ -72,7 +72,7 @@
 
 
 
-// do-while loop=>
+//=> do-while loop=>
 
 // var i = 1;
 // do{
