@@ -34,3 +34,4 @@ inner(2); //ReferenceError: inner is not defined.
 
 //1.You can keep the global namespace clean, which is less likely to cause namimg collisions.
 //2.Privacy-You can expose only those functions to the outside world that you decide, and keep the functionality that is not meant to be consumed by the rest of application to yourself.
+
