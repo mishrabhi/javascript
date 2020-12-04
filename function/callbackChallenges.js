@@ -55,6 +55,21 @@ forEach(['a', 'b', 'c', 'd'], function(n){
 console.log(value)
 
 
+//Challenge 5:
+//In the first part of this challenge, you're going to rebuild map as mapWith. This time you're going to use forEach inside of mapWith instead of using a for loop.
+function multiplyByTwo(num){
+    return num * 2
+}
+let temp = [];
+function mapWith(array, multiplyByTwo){
+    array.forEach((ele) =>{
+        let mul = multiplyByTwo(ele);
+        temp.push(mul)
+    })
+    return temp
+}
+console.log(mapWith([2,3], multiplyByTwo))
+
 
 
 
