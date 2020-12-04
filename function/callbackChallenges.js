@@ -22,16 +22,48 @@ console.log(addS('Apple'))
 //map([1,2,3,4,5]), multiplyByTwo); //-> [2,4,6,8,10]
 //multiplyByTwo(1);  // ->2
 //multiplyByTwo(2);  // ->4
-function multiplyByTwo(num) {
-    return num*2
-}
-let value = [];
-function map(array, callback) {
-for(i=0; i<array.length; i++){
-    mul=multiplyByTwo(array[i]);
-    value.push(mul)
+// function multiplyByTwo(num) {
+//     return num*2
+// }
+// let value = [];
+// function map(array, callback) {
+// for(i=0; i<array.length; i++){
+//     mul=multiplyByTwo(array[i]);
+//     value.push(mul)
 
+// }
+// return value
+// }
+// console.log(map([1,2,3], multiplyByTwo))
+
+//Challenge 4:
+//The function forEach takes an array and a callback, and runs the callback on each element of the array. forEach does not return anything.
+//let alphabet = ' ';
+// const letters = ['a', 'b', 'c', 'd'];
+// forEach(letters,function(char){
+//     alphabet += char;
+// });
+//console.log(alphabet);  //prints 'abcd'
+function forEach(letters, char){
+    return char(letters)
 }
-return value
-}
-console.log(map([1,2,3], multiplyByTwo))
+let value = '';
+forEach(['a', 'b', 'c', 'd'], function(n){
+    value = `'${n.join('')}'`
+    return value
+})
+console.log(value)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
