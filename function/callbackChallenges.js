@@ -22,19 +22,19 @@ console.log(addS('Apple'))
 //map([1,2,3,4,5]), multiplyByTwo); //-> [2,4,6,8,10]
 //multiplyByTwo(1);  // ->2
 //multiplyByTwo(2);  // ->4
-// function multiplyByTwo(num) {
-//     return num*2
-// }
-// let value = [];
-// function map(array, callback) {
-// for(i=0; i<array.length; i++){
-//     mul=multiplyByTwo(array[i]);
-//     value.push(mul)
+function multiplyByTwo(num) {
+    return num*2
+}
+let value = [];
+function map(array, callback) {
+for(i=0; i<array.length; i++){
+    mul=multiplyByTwo(array[i]);
+    value.push(mul)
 
-// }
-// return value
-// }
-// console.log(map([1,2,3], multiplyByTwo))
+}
+return value
+}
+console.log(map([1,2,3], multiplyByTwo))
 
 //Challenge 4:
 //The function forEach takes an array and a callback, and runs the callback on each element of the array. forEach does not return anything.
@@ -69,6 +69,38 @@ function mapWith(array, multiplyByTwo){
     return temp
 }
 console.log(mapWith([2,3], multiplyByTwo))
+
+
+//Challenge 6:
+//The function reduce takes an array and reduces the element to a single value.For example it can sum all the numbers, multiply them, or any operation that you can put into a function.
+//const nums = [4,1,3];
+//const add = function(a,b) {return a+b;}
+//reduce(nums, add, 0);   //->8
+function addition(a,b){
+    return a+b
+}
+function reduce(array, add, reducer){
+    for(i=0; i<array.length; i++){
+        addition = add(reducer, array[i])
+        reducer = addition;
+    }
+    return reducer
+}
+console.log(reduce([4,2,5,6], addition, 0))  //17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
