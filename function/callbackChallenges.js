@@ -89,6 +89,17 @@ function reduce(array, add, reducer){
 console.log(reduce([4,2,5,6], addition, 0))  //17
 
 
+//Challenge 7:
+// Construct a function intersection that compares input arrays and returns a new array with elements found in all of the inputs. BONUS: Use Reduces.
+function intersection (...arrays){
+    let value = arrays.reduce((a,arr) => (
+        a.filter((num) => arr.includes((num)))
+    ))
+    return value
+}
+console.log(intersection([5,10,15,20], [15,88,1,5,7], [1,10,15,5,20]))
+
+
 
 
 
